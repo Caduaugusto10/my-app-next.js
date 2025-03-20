@@ -1,10 +1,13 @@
-import styles from "../styles/inputs.module.css";
+import React from 'react';
+import styles from './Input.module.css';
 
-export default function Input( {title} ) {
+const Input = ({ title, className, ...props }) => {
     return (
-        <div className={styles.divInput}>
-            <label htmlFor="username">{title}</label>
-            <input type="text" id="username" name="username" required />
+        <div className={styles.inputContainer}>
+            <label>{title}</label>
+            <input type="text" className={`${styles.input} ${className}`} {...props} />
         </div>
-    )
-}
+    );
+};
+
+export default Input;
