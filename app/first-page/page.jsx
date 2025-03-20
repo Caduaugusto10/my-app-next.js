@@ -20,15 +20,37 @@ export default function First() {
                         <p>Nome: Carlos Augusto</p>
                         <p>Turma: 2TDS1</p>
                         <p>Curso: Desenvolvimento de Sistemas</p>
+
+
+                        <div className={styles.profile}>
+                          <h2>Linguagens</h2>
                         <div className={styles.cards}>
                             <ProfileCard 
                                 title="HTML"  
                                 icon="/html-icon.jpg" 
                             />
-                            <ProfileCard 
-                                title="CSS" 
-                                icon="/css-icon.jpg" 
+
+                            <ProfileCard
+                                title="CSS"
+                                icon="/css-icon.jpg"
                             />
+
+                            <ProfileCard
+                                title="JavaScript"
+                                icon="/javascript-icon.jpg"
+                            />
+
+                            <ProfileCard 
+                                title="NODE.JS" 
+                                icon="/node-icon.jpg" 
+                            />
+
+                            <ProfileCard
+                                title="NEXT.JS"
+                                icon="/next-icon.jpg"
+                            />
+
+                        </div>
                         </div>
 
                         <div className={styles.profile}>
